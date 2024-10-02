@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Eightiesco;
+    src: url(./fonts/EIGHTIESCOMEBACK-LTXCN.OTF);
+}
+
+
+* {
+    user-select: none;
+    color: black;
+    font-family: Eightiesco;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    padding: 0 8%;
+
+    @media only screen and (max-width: 500px) {
+        padding: 0 5%;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+
+html,
+body {
+    background-color: #f8f1de;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+button {
+    display: block;
+    background-color: #ff6432;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    border: 1px solid white;
+    outline: none;
+    margin: 0 auto;
+
+
+}
+
+.hero {
+    height: 100dvh;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 9rem;
+
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero h1 {
+
+        font-size: 7rem;
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero h1 {
+
+        font-size: 6rem;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero h1 {
+
+        font-size: 4rem;
+
+    }
+}
+
+.hero .char {
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.hero .char:hover {
+    transform: translateY(-1rem) !important;
+}
